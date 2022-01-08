@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Top Page</h1>
+  <%= link_to "Add a new article", new_article_path  %>
   <div class="row">
     <% @articles.each do |article| %>
       <div class="col-12 col-md-6 col-lg-4 mb-3">
