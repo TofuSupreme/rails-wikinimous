@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Top Page</h1>
+  <div class="row">
+    <% @articles.each do |article| %>
+      <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to article.title, article_path(article) %></h5>
+            <p class="card-text"><%= article.content %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
